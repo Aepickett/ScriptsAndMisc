@@ -1,0 +1,33 @@
+//savetofile defines a point of entry fro the console application
+#include <string>
+#include <fstream>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	ifstream inFile;
+	inFile.open("list.txt");
+
+	//check  for Error
+	if (inFile.fail())
+	{
+		cerr << "Error opening File" << endl;
+		exit(1);
+	}
+	string item;
+	int count = 0;
+	//reading through everyitem until end
+	while (!inFile.eof())//eof means end of file
+	{
+		inFile >> item;
+		if (item == "orange")//fetch full string 
+		{
+			count++;
+		}
+	}
+
+	cout << count << " Items found" << endl;
+	system("pause");//stops insta close
+	return 0;
+}

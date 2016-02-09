@@ -1,0 +1,44 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+typedef float f;
+int main()
+{
+	int choice;
+	int test;
+	bool test1;
+	cout << "First Program in C++ on big pc" << endl;
+	Sleep(5000);
+	cin >> test;
+	cout << test << endl;
+	if (test > 1)
+	{
+		test1 = true;
+	}
+	else
+	{
+		test1 = false;
+	}
+	if (test1 = false)
+	{
+		cout << "False" << endl;
+	}
+	if (test1 = true)
+	{
+		cout << "True" << endl;
+	}
+	cout << "Case test" << endl;
+	cin >> choice;
+	switch(choice)
+	{
+	case 1:
+		cout << "option 1 was selected" << endl;
+		break;
+	case 2:
+		cout << "option 2 was selected" << endl;
+		break;
+	default:
+		cout << "neither option 1 nor 2 was selected " << endl;
+	}
+
+}

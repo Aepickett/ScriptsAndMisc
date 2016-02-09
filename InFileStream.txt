@@ -1,0 +1,18 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+	ofstream outFile;
+	
+	outFile.open("sample.txt");
+
+	outFile << "First number: " << 5 << endl;
+
+	outFile.close();//nessacary to stop errors 
+
+	return 0;
+}
